@@ -257,6 +257,59 @@ int factorial(int n) {
 // cuando el tipo es static no se vuelve a instanciar cada vez que llamo a la funcion, se mantiene
 
 int main() {
+    const int EJERCICIO = 15;
+    int arr_a[] = {1, 2, 3, 4};
+    int arr_b[] = {5, 6, 7, 8};
+    const size_t length = 4;
+
+    switch (EJERCICIO) {
+        case 1:
+            hello_world();
+            break;
+        case 3:
+            check_size();
+            break;
+        case 4:
+            check_fix_size();
+            break;
+        case 5:
+            casting();
+            break;
+        case 6:
+            mensaje_secreto();
+            break;
+        case 7:
+            operadores();
+            break;
+        case 8:
+            diferencia_contadores();
+            break;
+        case 9:
+            tres_bit_cmp(0b0110, 0b1110);
+            break;
+        case 10:
+            rewrite_as_while();
+            break;
+        case 11:
+            rotar_arreglo(arr_a, length);
+            break;
+        case 12:
+            rotar_arreglo_gen(arr_b, length, 3);
+            break;
+        case 13:
+            foo();
+            break;
+        case 14:
+            dice_roll;
+            break;
+        case 15:
+            printf("Factorial de 6: %d\n",factorial(6));
+            break;
+        default:
+            printf("Ejercicio Inexistente\n");
+            
+
+    }
     printf("factorial de 6: %d\n", factorial(6));
 
     return 0;
