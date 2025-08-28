@@ -258,9 +258,9 @@ int factorial(int n) {
 
 int main() {
     const int EJERCICIO = 15;
+    const size_t length = 4;
     int arr_a[] = {1, 2, 3, 4};
     int arr_b[] = {5, 6, 7, 8};
-    const size_t length = 4;
 
     switch (EJERCICIO) {
         case 1:
