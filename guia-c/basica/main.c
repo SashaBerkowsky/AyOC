@@ -310,7 +310,6 @@ int main() {
             
 
     }
-    printf("factorial de 6: %d\n", factorial(6));
 
     return 0;
 }
