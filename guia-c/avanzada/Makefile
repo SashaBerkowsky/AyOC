@@ -1,17 +1,20 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic
+CFLAGS = -Wall -Wextra -pedantic -MMD -MP -g
 TARGET = main
+
+SRCS = type.c list.c main.c
+OBJS = $(SRCS:.c=.o)
 
 all: $(TARGET)
 
-$(TARGET): main.o
+$(TARGET): $(OBJS)
 	$(CC) $(FLAGS) $^ -o $@
 
-main.o: main.c
+%.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm *.o $(TARGET)
+	rm *.o $(TARGET) *.d
 
 .PHONY: all clean
 
